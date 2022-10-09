@@ -1,0 +1,55 @@
+// Este archivo crea componentes reutilizables en el proyecto.
+$color-main: #0075ff;
+
+/* 
+    Los mixins son pedazos de código que se repiten en varios
+    componentes 
+*/
+@mixin btn-base {
+    padding: 0.25rem 1.5rem;
+    border-radius: 0.25rem;
+}
+
+@mixin btn-sm-modify {
+    font-size: 0.75rem;
+    padding: 0.1rem 1rem;
+}
+
+// Componente botónes principales.
+.btn-main {
+    @include btn-base();
+    background-color: $color-main;
+    color: white;
+    border: solid 1px $color-main;
+
+    // Cuando se haga hover en .btn-main y .btn-main-s
+    &:hover {
+        background-color: white;
+        color: $color-main;
+    }
+
+    // Extiende los estilos del padre y utiliza los propios para el componente
+    // .btn-main-s que es un botón igual pero algo mas pequeño.
+    &-s {
+        @extend .btn-main;
+        @include btn-sm-modify();
+    }
+}
+
+// Componente botones secundarios.
+.btn-sec {
+    @include btn-base(); // Incluye los estilos del botón base
+    color: #000;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+        color: #888;
+    }
+
+    &-s {
+        @extend .btn-sec;
+        @include btn-sm-modify();
+    }
+}
+
