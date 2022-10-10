@@ -101,6 +101,10 @@
   font-weight: 600;
 }
 
+html {
+  min-width: 100vw;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -270,6 +274,22 @@ body {
 }
 .sec-footer-cta .footer-cta .cta-description {
   font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .sec-onboarding .steps {
+    flex-direction: column;
+  }
+  .sec-footer-cta {
+    background-image: none;
+  }
+  .sec-footer-cta .footer-cta {
+    width: 100%;
+    text-align: center;
+  }
+  .sec-features .features .text {
+    max-width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
