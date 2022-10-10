@@ -51,6 +51,7 @@ body {
 }
 
 .sec-features {
+    border-top: 1px solid #ddd;
     @include section-display();
 
     .intro {
@@ -100,5 +101,27 @@ body {
                 max-width: 25rem;
             }
         }
+    }
+}
+
+.sec-benefits {
+    border-top: 1px solid #ddd;
+    @include section-display();
+
+    .intro {
+        text-align: center;
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+            color: #888;
+        }
+    }
+
+    .benefit-cards {
+        padding: 0 1.5rem 1.5rem 1.5rem;
     }
 }
