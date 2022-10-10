@@ -45,7 +45,7 @@ body {
 
     .home-img {
         img {
-            width: 110%;
+            width: 120%;
         }
     }
 }
@@ -174,6 +174,27 @@ body {
             flex: 1;
             border-top: 1px solid #ddd;
             margin: 0 1rem;
+        }
+    }
+}
+
+.sec-footer-cta {
+    background-color: components.$color-footer;
+    padding: 5rem;
+    background-image: url("https://assets.coinbase.com/assets/earn-upsell-desktop.7ac67bac6fdea56ce4ca11961fc8f95d.jpg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: contain;
+
+    .footer-cta {
+        width: 50%;
+
+        .cta-title {
+            font-size: 2rem;
+        }
+    
+        .cta-description {
+            font-size: 1.1rem;
         }
     }
 }
