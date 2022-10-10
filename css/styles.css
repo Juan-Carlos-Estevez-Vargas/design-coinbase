@@ -93,12 +93,11 @@
 }
 .icon-desc .icon {
   color: #0075ff;
-  font-size: 10rem;
+  font-size: 6rem;
   padding: 0;
 }
 .icon-desc .title {
-  margin-top: -2rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -226,6 +225,33 @@ body {
 .sec-kpis .kpi .desc {
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.6666666667);
+}
+
+.sec-onboarding {
+  width: 100%;
+  max-width: 768px;
+  margin: auto;
+  padding: 3rem;
+}
+.sec-onboarding .intro {
+  text-align: center;
+}
+.sec-onboarding .intro h3 {
+  font-size: 1.8rem;
+}
+.sec-onboarding .intro p {
+  font-size: 0.8rem;
+  color: #888;
+}
+.sec-onboarding .steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sec-onboarding .steps .step-separator {
+  flex: 1;
+  border-top: 1px solid #ddd;
+  margin: 0 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
